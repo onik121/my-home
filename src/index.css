@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+  max-width: 1640px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+/* btn */
+
+.login{
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+/*  */
+
+.slider{
+  height: 80vh;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 20px;
+}
+
+.slider-1{
+  background-image: url(../src/assets/1.jpg);
+}
+
+.slider-2{
+  background-image: url(../src/assets/2.jpg);
+}
+
+.slider-3{
+  background-image: url(../src/assets/3.jpg);
+}
+
+.slider-4{
+  background-image: url(../src/assets/4.jpg);
+}
+
+.swiper-button-next{
+  color: black !important;
+  background-color: aqua;
+  border-radius: 50%;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.swiper-button-next:after {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+
+.swiper-button-prev{
+  color: black !important;
+  background-color: aqua;
+  border-radius: 50%;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.swiper-button-prev:after {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
