@@ -12,7 +12,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar p-0 mb-3 mt-1">
+        <div className="navbar p-0 mb-3 mt-1 max-w-[1440px] mx-auto px-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,7 +22,7 @@ const Navbar = () => {
                         {navlinks}
                     </ul>
                 </div>
-                <Link to={'/'}><img className="w-[180px]" src={logo}></img></Link>
+                <Link to={'/'}><img src={logo}></img></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

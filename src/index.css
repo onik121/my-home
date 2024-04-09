@@ -2,25 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-#root{
-  max-width: 1640px;
-  padding: 0px 20px;
-  margin: 0 auto;
-}
+
+
 
 /* btn */
-
 .login{
-  background-color: rgb(240, 240, 240);
-  border-radius: 5px;
+  background-color: #bc986b;
   padding: 10px 15px;
   font-weight: 500;
+  color: white;
+  border-radius: 5px;
+}
+
+.view{
+  background-color: #bc986b;
+  padding: 10px 15px;
+  font-weight: 500;
+  color: white;
 }
 
 /*  */
 
 .slider{
-  height: 80vh;
+  height: 70vh;
   background-position: center;
   border-radius: 20px;
 }
@@ -49,27 +53,59 @@
 }
 
 .swiper-button-next{
-  color: black !important;
-  background-color: aqua;
+  color: #bc986b !important;
+  background-color: white;
   border-radius: 50%;
-  width: 50px !important;
-  height: 50px !important;
+  width: 45px !important;
+  height: 45px !important;
 }
 
 .swiper-button-next:after {
-  font-size: 25px !important;
+  font-size: 20px !important;
   font-weight: 600 !important;
+  margin-left: 4px;
 }
 
 .swiper-button-prev{
-  color: black !important;
-  background-color: aqua;
+  color: #bc986b !important;
+  background-color: white;
   border-radius: 50%;
-  width: 50px !important;
-  height: 50px !important;
+  width: 45px !important;
+  height: 45px !important;
 }
 
 .swiper-button-prev:after {
-  font-size: 25px !important;
+  font-size: 20px !important;
   font-weight: 600 !important;
+  margin-left: -4px;
 }
+
+.swiper-pagination-bullet{
+  background:  white !important;
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 1) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #bc986b !important;
+}
+
+
+
+
+
+/*  */
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 30px;
+}
+
+.status{
+  background-color: #bc986b;
+  color: white;
+  padding: 1px 15px;
+  text-transform: capitalize;
+  margin-top: -26px;
+  width: fit-content;
+}
+/*  */
