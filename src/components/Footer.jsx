@@ -7,7 +7,7 @@ const Footer = () => {
             <footer className="footer pt-10 pb-14 max-w-[1440px] mx-auto px-5">
                 <aside className='max-w-[300px]'>
                     <img src={logo}></img>
-                    <p className='mt-3 text-base font-semibold'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, suscipit!</p>
+                    <p className='mt-3 text-base font-semibold'>Discover a place to call your own where dreams come home.</p>
                 </aside>
                 <nav>
                     <h6 className="text-2xl text-black font-semibold mb-2">Explore</h6>
