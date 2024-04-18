@@ -5,8 +5,8 @@ import img from '../assets/8.jpg'
 const Blog = () => {
     return (
         <div className="max-w-[1440px] mx-auto px-5 mb-20">
-            <div className="flex justify-between">
-                <h1 className="text-5xl font-semibold text-black">Our Latest Blog</h1>
+            <div className="flex justify-between gap-5">
+                <h1 className="text-5xl font-semibold text-black title">Our Latest Blog</h1>
                 <button className="blog">OUR BlOG</button>
             </div>
             <div className='blog-container mt-10'>

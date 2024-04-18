@@ -7,7 +7,7 @@ const Properties = () => {
     const [data, setData] = useState(6)
 
     useEffect(() => {
-        fetch('properties.json')
+        fetch('https://onik121.github.io/Assignment-9-data/properties.json')
             .then(res => res.json())
             .then(data => setProperties(data))
     }, [])
@@ -15,8 +15,8 @@ const Properties = () => {
 
     return (
         <div className="bg-[#f3f4f9] mt-20 mb-20 py-10">
-            <div className="text-center max-w-[870px] mx-auto mb-12">
-                <h1 className="text-5xl font-semibold text-black">Featured Properties</h1>
+            <div className="text-center max-w-[870px] mx-auto mb-12 px-5">
+                <h1 className="text-5xl font-semibold text-black title">Featured Properties</h1>
                 <p className="mt-4 text-lg">Our passion for design shines through in every detail, ensuring that each space we create becomes a masterpiece of comfort and functionality.</p>
             </div>
             <div className="max-w-[1440px] mx-auto px-5 card-container">

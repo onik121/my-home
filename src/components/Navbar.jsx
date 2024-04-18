@@ -1,14 +1,27 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../assets/logo.png'
+import use from '../assets/user2.png'
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
 
+    const { user, logOut } = useContext(AuthContext);
+
     const navlinks = <>
-        <li><NavLink>Home</NavLink></li>
-        {/* <li><NavLink>Update Profile</NavLink></li> */}
-        <li><NavLink>About Us</NavLink></li>
-        <li><NavLink>Faq</NavLink></li>
+        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'/about'}>About Us</NavLink></li>
+        {/* <li><NavLink to={'/fag'}>Faq</NavLink></li> */}
+        {
+            user && <li><NavLink to={'/updateprofile'}>Update Profile</NavLink></li>
+        }
     </>
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error))
+    }
 
     return (
         <div className="navbar p-0 mb-3 fixed z-50 bg-white">
@@ -25,15 +38,23 @@ const Navbar = () => {
                     <Link to={'/'}><img src={logo}></img></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu-horizontal">
                         {navlinks}
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-3">
-                    <div className="w-9">
-                        <img className="rounded-full" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                    </div>
-                    <Link to={'/login'}><button className="login">Login</button></Link>
+                    {
+                        user &&
+                        <div className="w-9 tooltip tooltip-bottom cursor-pointer" data-tip={user?.displayName}>
+                            {
+                                user? <img className="rounded-full w-[35px] h-[35px]" src={user?.photoURL} /> : <img className="rounded-full w-[35px] h-[35px]" src={use} />
+                            }
+                        </div>
+                    }
+                    {user ?
+                        <button onClick={handleLogOut} className="login">Logout</button> :
+                        <Link to={'/login'}><button className="login">Login</button></Link>
+                    }
                 </div>
             </div>
         </div>

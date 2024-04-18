@@ -3,99 +3,108 @@
         "title": "Luxury Villa with Ocean View",
         "id": 1,
         "name": "Residential",
-        "description": "Beautiful villa overlooking the ocean, featuring modern amenities and spacious living areas.",
+        "description": "Luxury Villa with Ocean View: This stunning Malibu villa offers modern amenities and spacious living areas, all overlooking the serene expanse of the ocean, creating the perfect setting for luxurious coastal living and relaxation.",
         "price": "$1,500,000",
         "status": "sale",
         "area": "4000 sq ft",
         "location": "Malibu, California",
-        "facilities": ["living room", "swimming pool", "kitchen"]
+        "facilities": ["living room", "swimming pool", "kitchen"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/1.jpg"
     },
     {
         "title": "Downtown Loft Apartment",
         "id": 2,
         "name": "Residential",
-        "description": "Chic loft apartment in the heart of downtown, perfect for urban living with stunning city views.",
+        "description": "Downtown Loft Apartment: In the heart of NYC, this chic loft boasts urban sophistication and stunning city views, complemented by its inviting living room, convenient gym access, and a delightful rooftop terrace for enjoying the cityscape.",
         "price": "$3,000/month",
         "status": "rent",
         "area": "1200 sq ft",
         "location": "New York City, New York",
-        "facilities": ["living room", "gym", "rooftop terrace"]
+        "facilities": ["living room", "gym", "rooftop terrace"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/2.jpg"
     },
     {
         "title": "Modern Suburban Home",
         "id": 3,
         "name": "Residential",
-        "description": "Spacious family home in a peaceful suburban neighborhood, featuring a large backyard and upgraded kitchen.",
+        "description": "Modern Suburban Home: Nestled in a tranquil Denver suburb, this spacious family home presents a haven of comfort with its expansive backyard and upgraded kitchen, offering an idyllic retreat from the bustle of city life.",
         "price": "$450,000",
         "status": "sale",
         "area": "2500 sq ft",
         "location": "Denver, Colorado",
-        "facilities": ["living room", "backyard", "kitchen"]
+        "facilities": ["living room", "backyard", "kitchen"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/3.jpg"
     },
     {
         "title": "Seaside Cottage",
         "id": 4,
-        "segment_name": "Vacation",
-        "description": "Quaint cottage steps away from the beach, offering a cozy retreat with coastal charm and ocean breezes.",
+        "name": "Vacation",
+        "description": "Seaside Cottage: Embrace the charm of coastal living in this quaint Cape Cod cottage, where every moment is enriched by the soothing sounds of the nearby waves and the gentle sea breeze, promising a truly rejuvenating escape.",
         "price": "$250/night",
         "status": "rent",
         "area": "800 sq ft",
         "location": "Cape Cod, Massachusetts",
-        "facilities": ["living room", "beach access", "porch"]
+        "facilities": ["living room", "beach access", "porch"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/4.jpg"
     },
     {
         "title": "Modern City Apartment",
         "id": 5,
         "name": "Residential",
-        "description": "Contemporary apartment in a bustling city neighborhood, featuring sleek design and proximity to shops and restaurants.",
+        "description": "Modern City Apartment: Experience the epitome of contemporary urban living in this sleek Toronto apartment, where stylish design meets convenience, with an array of shops and restaurants just moments away, ensuring an effortlessly vibrant lifestyle.",
         "price": "$800,000",
         "status": "sale",
         "area": "1200 sq ft",
         "location": "Toronto, Ontario",
-        "facilities": ["living room", "gym", "balcony"]
+        "facilities": ["living room", "gym", "balcony"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/5.jpg"
     },
     {
         "title": "Beachfront Bungalow",
         "id": 6,
         "name": "Vacation",
-        "description": "Charming bungalow steps away from the beach, ideal for a seaside retreat with stunning sunsets.",
+        "description": "Beachfront Bungalow: Settle into the laid-back rhythm of island life in this charming Maui bungalow, mere steps from the soft sands and shimmering waters, offering an enchanting retreat infused with the essence of tropical paradise.",
         "price": "$300/night",
         "status": "rent",
         "area": "1000 sq ft",
         "location": "Maui, Hawaii",
-        "facilities": ["living room", "beach access", "patio"]
+        "facilities": ["living room", "beach access", "patio"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/6.jpg"
     },
     {
         "title": "Mountain View Chalet",
         "id": 7,
         "name": "Vacation",
-        "description": "Picturesque chalet nestled in the mountains, offering breathtaking views and access to nearby hiking trails.",
+        "description": "Mountain View Chalet: Surrounded by the majestic beauty of Lake Tahoe's peaks, this picturesque chalet invites you to unwind amidst nature's splendor, with breathtaking vistas and easy access to invigorating hiking trails for unforgettable outdoor adventures.",
         "price": "$250/night",
         "status": "rent",
         "area": "1500 sq ft",
         "location": "Lake Tahoe, California",
-        "facilities": ["living room", "hot tub", "deck"]
+        "facilities": ["living room", "hot tub", "deck"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/7.jpg"
     },
     {
         "title": "City Center Penthouse",
         "id": 8,
         "name": "Residential",
-        "description": "Luxurious penthouse in the heart of the city, featuring panoramic skyline views and high-end finishes.",
+        "description": "City Center Penthouse: Elevate your LA lifestyle in this luxurious penthouse, where panoramic skyline views captivate the senses and exquisite finishes adorn every corner, while a rooftop pool and gourmet kitchen ensure unparalleled sophistication and indulgence.",
         "price": "$2,500,000",
         "status": "sale",
         "area": "3500 sq ft",
         "location": "Los Angeles, California",
-        "facilities": ["living room", "rooftop pool", "gourmet kitchen"]
+        "facilities": ["living room", "rooftop pool", "gourmet kitchen"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/8.jpg"
     },
     {
         "title": "Riverside Retreat",
         "id": 9,
         "name": "Vacation",
-        "description": "Tranquil retreat along the riverbank, offering a serene escape with fishing and boating opportunities.",
+        "description": "Riverside Retreat: Discover serenity along the tranquil banks of Sedona's river, where this charming retreat offers a peaceful escape for fishing, boating, and simply savoring the beauty of nature's embrace, promising cherished moments of relaxation and rejuvenation.",
         "price": "$180/night",
         "status": "rent",
         "area": "1200 sq ft",
         "location": "Sedona, Arizona",
-        "facilities": ["living room", "river access", "bbq grill"]
+        "facilities": ["living room", "river access", "bbq grill"],
+        "img": "https://raw.githubusercontent.com/onik121/Assignment-9-img/main/9.jpg"
     }
 ]
