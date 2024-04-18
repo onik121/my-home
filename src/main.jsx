@@ -16,12 +16,13 @@ import AuthProvider from './provider/AuthProvider';
 import PrivateRoute from './components/PrivateRoute';
 import UpdateProfile from './pages/UpdateProfile';
 import { Toaster } from 'react-hot-toast';
+import Error from './pages/Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <div>Opps!</div>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: '/',

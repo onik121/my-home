@@ -17,6 +17,10 @@
 }
 
 
+
+
+
+
 /* btn */
 .login {
   background-color: #bc986b;
@@ -47,7 +51,21 @@
   font-weight: 500;
 }
 
+.return-home{
+  background-color: #bc986b;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: black;
+}
 /****/
+
+
+
+
+
+
+
+
 
 .slider {
   height: 70vh;
@@ -119,7 +137,16 @@
 
 
 
-/*  */
+
+
+
+
+
+
+
+
+
+/**/
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -134,13 +161,15 @@
   margin-top: -26px;
   width: fit-content;
 }
-
-/*  */
-
+/**/
 
 
 
-/*  */
+
+
+
+
+/**/
 
 .blog-container {
   display: grid;
@@ -148,7 +177,7 @@
   gap: 0px 30px;
 }
 
-/*  */
+/**/
 
 
 .link {
