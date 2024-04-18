@@ -3,6 +3,7 @@ import { AuthContext } from "../provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import use from '../assets/user.png'
 import { Helmet } from "react-helmet";
+import { Scroll } from "../components/Scroll";
 
 const UpdateProfile = () => {
 
@@ -23,6 +24,7 @@ const UpdateProfile = () => {
 
     return (
         <div className="min-h-[700px] flex items-center justify-center max-w-[900px] mx-auto px-5">
+            <Scroll></Scroll>
             <Helmet>
                 <title>Update Profile</title>
             </Helmet>

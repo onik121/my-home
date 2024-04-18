@@ -2,10 +2,12 @@ import { Helmet } from "react-helmet";
 import Blog from "../components/Blog";
 import Properties from "../components/Properties";
 import Slider from "../components/Slider";
+import { Scroll } from "../components/Scroll";
 
 const Home = () => {
     return (
         <div>
+            <Scroll></Scroll>
             <Helmet>
                 <title>My Home</title>
             </Helmet>

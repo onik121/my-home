@@ -17,6 +17,7 @@ import PrivateRoute from './components/PrivateRoute';
 import UpdateProfile from './pages/UpdateProfile';
 import { Toaster } from 'react-hot-toast';
 import Error from './pages/Error';
+import OurClients from './pages/OurClients';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
         element: <About></About>
       },
       {
+        path: '/ourclients',
+        element: <PrivateRoute><OurClients></OurClients></PrivateRoute>
+      },
+      {
         path: '/updateprofile',
         element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
       },
@@ -59,5 +64,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RouterProvider router={router} />
       <Toaster />
     </AuthProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

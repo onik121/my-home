@@ -7,6 +7,7 @@ import { GithubAuthProvider, GoogleAuthProvider, signInWithPopup } from "firebas
 import auth from "../firebase/firebase.config";
 import toast from 'react-hot-toast';
 import {Helmet} from "react-helmet";
+import { Scroll } from "../components/Scroll";
 
 const Login = () => {
 
@@ -37,7 +38,7 @@ const Login = () => {
         signInWithPopup(auth, googlrProvider)
             .then(() => {
                 toast.success('Successfully login')
-                navigate('/')
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 toast.error(error.code)
@@ -48,7 +49,7 @@ const Login = () => {
         signInWithPopup(auth, githubProvider)
             .then(() => {
                 toast.success('Successfully login')
-                navigate('/')
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => {
                 toast.error(error.code)
@@ -57,6 +58,7 @@ const Login = () => {
 
     return (
         <div className="hero flex flex-col items-center justify-center min-h-[650px] max-w-[1440px] mx-auto px-5">
+            <Scroll></Scroll>
             <Helmet>
                 <title>Login</title>
             </Helmet>

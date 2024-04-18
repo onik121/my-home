@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useLoaderData, useParams } from "react-router-dom";
+import { Scroll } from "../components/Scroll";
 
 const Details = () => {
 
@@ -13,6 +14,7 @@ const Details = () => {
 
     return (
         <div className="max-w-[1440px] mx-auto px-5 min-h-[600px] flex items-center">
+            <Scroll></Scroll>
             <Helmet>
                 <title>Property Details</title>
             </Helmet>

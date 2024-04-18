@@ -5,6 +5,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { updateProfile } from "firebase/auth";
 import toast from 'react-hot-toast';
 import { Helmet } from "react-helmet";
+import { Scroll } from "../components/Scroll";
 
 const Register = () => {
 
@@ -49,6 +50,7 @@ const Register = () => {
 
     return (
         <div className="hero flex flex-col items-center justify-center min-h-[700px] max-w-[1440px] mx-auto px-5">
+            <Scroll></Scroll>
             <Helmet>
                 <title>Register</title>
             </Helmet>

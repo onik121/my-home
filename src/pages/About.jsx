@@ -5,10 +5,16 @@ import agent1 from '../assets/agents-1.jpg'
 import agent2 from '../assets/agents-2.jpg'
 import agent3 from '../assets/agents-3.jpg'
 import agent4 from '../assets/agents-4.jpg'
+import { Helmet } from "react-helmet";
+import { Scroll } from "../components/Scroll";
 
 const About = () => {
     return (
         <div className="max-w-[1440px] mx-auto px-5 mt-2">
+            <Scroll></Scroll>
+            <Helmet>
+                <title>About Us</title>
+            </Helmet>
             <div className="about-container">
                 <div data-aos="zoom-in" data-aos-duration="1000">
                     <div className="about-icon-box"><IoLocationOutline className="text-4xl text-[#bc986b]" /></div>
@@ -26,33 +32,36 @@ const About = () => {
                     <p>View apartment listings with photos, HD videos, virtual tours, 3D floor plans etc.</p>
                 </div>
             </div>
-            <div className="about-agent-container mt-[60px] mb-10">
-                <div className="bg-[#f3f4f9]" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src={agent1}></img>
-                    <div className="text-center p-7">
-                        <h1 className="text-2xl text-black font-medium mb-1">Michael Rutter</h1>
-                        <p>Home Broker</p>
+            <div className="mt-[60px] mb-10">
+                <h1 className="text-5xl mb-8 text-black font-medium title animate__animated animate__bounce">Our Agent</h1>
+                <div className="about-agent-container">
+                    <div className="bg-[#f3f4f9]" data-aos="zoom-in" data-aos-duration="1500">
+                        <img src={agent1}></img>
+                        <div className="text-center p-7">
+                            <h1 className="text-2xl text-black font-medium mb-1">Michael Rutter</h1>
+                            <p>Home Broker</p>
+                        </div>
                     </div>
-                </div>
-                <div className="bg-[#f3f4f9]" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src={agent2}></img>
-                    <div className="text-center p-7">
-                        <h1 className="text-2xl text-black font-medium mb-1">Sam Wilson</h1>
-                        <p>Home Broker</p>
+                    <div className="bg-[#f3f4f9]" data-aos="zoom-in" data-aos-duration="1500">
+                        <img src={agent2}></img>
+                        <div className="text-center p-7">
+                            <h1 className="text-2xl text-black font-medium mb-1">Sam Wilson</h1>
+                            <p>Home Broker</p>
+                        </div>
                     </div>
-                </div>
-                <div className="bg-[#f3f4f9]" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src={agent3}></img>
-                    <div className="text-center p-7">
-                        <h1 className="text-2xl text-black font-medium mb-1">Janet Richmond</h1>
-                        <p>Home Broker</p>
+                    <div className="bg-[#f3f4f9]" data-aos="zoom-in" data-aos-duration="1500">
+                        <img src={agent3}></img>
+                        <div className="text-center p-7">
+                            <h1 className="text-2xl text-black font-medium mb-1">Janet Richmond</h1>
+                            <p>Home Broker</p>
+                        </div>
                     </div>
-                </div>
-                <div className="bg-[#f3f4f9]" data-aos="zoom-in" data-aos-duration="1500">
-                    <img src={agent4}></img>
-                    <div className="text-center p-7">
-                        <h1 className="text-2xl text-black font-medium mb-1">Carl Parker</h1>
-                        <p>Home Broker</p>
+                    <div className="bg-[#f3f4f9]" data-aos="zoom-in" data-aos-duration="1500">
+                        <img src={agent4}></img>
+                        <div className="text-center p-7">
+                            <h1 className="text-2xl text-black font-medium mb-1">Carl Parker</h1>
+                            <p>Home Broker</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,16 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../assets/logo.png'
-import use from '../assets/user2.png'
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
-    
+
     const { user, logOut } = useContext(AuthContext);
 
     const navlinks = <>
         <li><NavLink to={'/'}>Home</NavLink></li>
         <li><NavLink to={'/about'}>About Us</NavLink></li>
+        <li><NavLink to={'/ourclients'}>Our Clients</NavLink></li>
         {
             user && <li><NavLink to={'/updateprofile'}>Update Profile</NavLink></li>
         }
@@ -46,7 +46,7 @@ const Navbar = () => {
                         user &&
                         <div className="w-9 tooltip tooltip-bottom cursor-pointer" data-tip={user?.displayName}>
                             {
-                                user? <img className="rounded-full w-[35px] h-[35px]" src={user?.photoURL} /> : <img className="rounded-full w-[35px] h-[35px]" src={use} />
+                                user && <img className="rounded-full w-[35px] h-[35px]" src={user?.reloadUserInfo?.photoUrl} />
                             }
                         </div>
                     }
