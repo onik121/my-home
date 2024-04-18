@@ -10,7 +10,6 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Root from './components/Root';
 import About from './pages/About';
-import Fag from './pages/Fag';
 import Details from './pages/Details';
 import Register from './pages/Register';
 import AuthProvider from './provider/AuthProvider';
@@ -39,10 +38,6 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About></About>
-      },
-      {
-        path: '/fag',
-        element: <Fag></Fag>
       },
       {
         path: '/updateprofile',
