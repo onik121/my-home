@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import use from '../assets/user.png'
+import { Helmet } from "react-helmet";
 
 const UpdateProfile = () => {
 
@@ -20,6 +21,9 @@ const UpdateProfile = () => {
 
     return (
         <div className="min-h-[700px] flex items-center justify-center max-w-[900px] mx-auto px-5">
+            <Helmet>
+                <title>Update Profile</title>
+            </Helmet>
             <div className="flex justify-between items-center w-full gap-12 update-profile-div">
                 <div>
                     <div className="mb-5 flex justify-center">

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const Details = () => {
@@ -12,6 +13,9 @@ const Details = () => {
 
     return (
         <div className="max-w-[1440px] mx-auto px-5 min-h-[600px] flex items-center">
+            <Helmet>
+                <title>Property Details</title>
+            </Helmet>
             <div className="book-details-container flex items-center">
                 <div className="book-details-img">
                     <div>
