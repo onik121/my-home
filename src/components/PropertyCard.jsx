@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { CiLocationOn, } from "react-icons/ci";
+import PropTypes from 'prop-types';
 
 const PropertyCard = ({ property }) => {
     const { title, location, status, id, img } = property;
@@ -17,5 +18,9 @@ const PropertyCard = ({ property }) => {
         </div>
     );
 };
+
+PropertyCard.propTypes = {
+    property: PropTypes,
+}
 
 export default PropertyCard;
