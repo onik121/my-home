@@ -257,6 +257,44 @@
 }
 
 
+
+
+
+
+/* about page */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px 30px;
+}
+
+.about-container>div {
+  border: 5px solid #f3f4f9;
+  padding: 40px;
+}
+
+.about-icon-box {
+  border: 5px solid #f3f4f9;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-agent-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px 30px;
+}
+
+
+
+
+
+
+
 /* responsive */
 @media screen and (max-width: 1150px) {
   .card-container {
@@ -290,6 +328,16 @@
 
   .card-img {
     height: 70%;
+  }
+
+  .about-agent-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 30px;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 30px;
   }
 }
 
@@ -327,8 +375,15 @@
     font-size: 15px !important;
     margin-left: -3px;
   }
+
   .login {
     padding: 9px 10px;
   }
+
+  .about-agent-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 30px;
+  }
 }
+
 /**/
