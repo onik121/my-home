@@ -2,8 +2,7 @@ import img1 from '../assets/8.jpg'
 import img2 from '../assets/blog-2.jpg'
 import img3 from '../assets/blog-3.jpg'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
 AOS.init();
 
 
