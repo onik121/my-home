@@ -28,12 +28,15 @@ const Register = () => {
         }
         createUser(email, password)
             .then((result) => {
+                navigate('/')
+                toast.success('Registration Successful')
                 updateProfile(result.user, {
                     displayName: name,
                     photoURL: photo,
                 })
-                navigate('/')
-                toast.success('Register')
+                    .then(() => {
+                        window.location.reload();
+                    })
             }
             )
             .catch((error) => {

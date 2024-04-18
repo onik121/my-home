@@ -7,6 +7,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'animate.css';
 
 const Slider = () => {
     return (
@@ -18,7 +19,7 @@ const Slider = () => {
             <SwiperSlide>
                 <div className='slider-1 slider'>
                     <div className='overlay flex items-center justify-center'>
-                        <div className='text-white text-center max-w-[700px] mx-auto slider-content'>
+                        <div className='text-white text-center max-w-[700px] mx-auto slider-content animate__animated animate__zoomIn animate__slow'>
                             <h1 className='text-5xl title'>Your Journey to the Perfect Residence Starts Here</h1>
                             <p className='text-lg mt-5'>Stylish apartments with cutting-edge design, luxurious amenities, and prime city location for an elevated urban lifestyle experience.</p>
                         </div>
