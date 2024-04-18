@@ -16,7 +16,9 @@ const UpdateProfile = () => {
             displayName: name,
             photoURL: photo,
         })
-        window.location.reload()
+            .then(() => {
+                window.location.reload();
+            })
     }
 
     return (
@@ -38,11 +40,11 @@ const UpdateProfile = () => {
                     <form className="update-form" onSubmit={handleUpdate}>
                         <div>
                             <label>Your Name</label>
-                            <input type="text" name="name" id="" required/>
+                            <input type="text" name="name" id="" required />
                         </div>
                         <div className="mt-4">
                             <label>Photo Url</label>
-                            <input type="text" name="photo" id="" required/>
+                            <input type="text" name="photo" id="" required />
                         </div>
                         <button className="submit mt-5">Submit</button>
                     </form>
