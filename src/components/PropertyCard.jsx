@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const PropertyCard = ({ property }) => {
     const { title, location, status, id, img } = property;
     return (
-        <div className='bg-white p-5'>
+        <div className='p-5 h-fit bg-white'>
             <img className='-mt-10 relative h-[250px] w-full card-img' src={img}></img>
             <div className='status absolute'>{status}</div>
             <h1 className='text-2xl text-black font-semibold mt-2'>{title}</h1>

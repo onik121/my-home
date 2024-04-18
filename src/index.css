@@ -51,12 +51,13 @@
   font-weight: 500;
 }
 
-.return-home{
+.return-home {
   background-color: #bc986b;
   font-weight: 500;
   padding: 10px 20px;
   color: black;
 }
+
 /****/
 
 
@@ -78,6 +79,10 @@
   height: 100%;
   background: rgba(0, 0, 0, .4);
   border-radius: 20px;
+}
+
+.slider-content {
+  margin: 0px 60px;
 }
 
 .slider-1 {
@@ -161,6 +166,7 @@
   margin-top: -26px;
   width: fit-content;
 }
+
 /**/
 
 
@@ -265,6 +271,7 @@
     gap: 20px 0px;
     margin-bottom: 20px;
   }
+
   .login-details {
     max-width: 500px;
   }
@@ -281,7 +288,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .card-img{
+  .card-img {
     height: 70%;
   }
 }
@@ -300,4 +307,25 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .swiper-button-next {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .swiper-button-next:after {
+    font-size: 15px !important;
+    margin-left: 3px;
+  }
+
+  .swiper-button-prev {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .swiper-button-prev:after {
+    font-size: 15px !important;
+    margin-left: -3px;
+  }
+}
 /**/
